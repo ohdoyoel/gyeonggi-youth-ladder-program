@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/Header";
 
@@ -17,7 +16,7 @@ export default function RootLayout({
     <html lang="kor">
       <body>
         <Header />
-        {children}
+        <div className="px-60">{children}</div>
       </body>
     </html>
   );
