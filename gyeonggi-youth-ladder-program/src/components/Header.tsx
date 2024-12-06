@@ -6,7 +6,12 @@ export default function Header() {
       <Link href="/" className="text-xl font-semibold">
         경기청년사다리프로그램
       </Link>
-      <Link href="/programs">아카이브</Link>
+      <Link
+        href="/programs"
+        className="px-4 py-2 rounded-lg hover:bg-slate-100"
+      >
+        아카이브
+      </Link>
     </div>
   );
 }

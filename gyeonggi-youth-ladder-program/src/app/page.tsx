@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       <div
-        className="relative flex flex-col items-center justify-center w-full gap-10 bg-center bg-cover grayscale brightness-200"
+        className="relative flex flex-col items-center justify-center w-full gap-10 bg-center bg-cover  brightness-[3]"
         style={{
           backgroundImage: "url('/hero.png')",
           height: "calc(100vh - 64px)",
@@ -204,6 +204,10 @@ export default function Home() {
           <p className="font-medium text-base">
             포천시 경기청년사다리 1기 오도열
           </p>
+        </div>
+        <div className="flex flex-col gap-2">
+          <p className="font-bold text-lg">도움</p>
+          <p className="font-medium text-base">경기도일자리재단</p>
         </div>
       </footer>
     </div>
