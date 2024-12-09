@@ -9,7 +9,6 @@ interface PaginationProps {
 
 export default function Pagination({ num, data }: PaginationProps) {
   const [page, setPage] = useState(1);
-  const [showData, setShowData] = useState([]);
 
   const pageBtns = [...Array(Math.ceil(data.length / num))].map((_, idx) => (
     <button

@@ -5,14 +5,14 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       <div
-        className="relative flex flex-col items-center justify-center w-full gap-10 bg-center bg-cover"
+        className="relative flex flex-col items-center justify-center w-full gap-10 bg-center bg-cover brightness-200"
         style={{
           backgroundImage: "url('/home/hero.png')",
           height: "calc(100vh - 64px)",
         }}
       >
         <div className="absolute inset-0 backdrop-blur-md"></div>
-        <div className="z-10 flex flex-col gap-2 font-semibold text-7xl">
+        <div className="z-10 flex flex-col gap-2 font-bold text-7xl">
           <p>경기청년</p>
           <p>사다리즈</p>
           <p>프로그램</p>

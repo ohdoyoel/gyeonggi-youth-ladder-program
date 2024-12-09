@@ -18,7 +18,7 @@ export default function ProgramItem({
 }: ProgramItemProps) {
   return (
     <Link
-      href={`/${id}`}
+      href={`/programs/${id}`}
       className="flex justify-between items-center group transition ease-in-out duration-300 hover:-translate-y-1 hover:scale-105 "
     >
       <div className="flex flex-col gap-2">
