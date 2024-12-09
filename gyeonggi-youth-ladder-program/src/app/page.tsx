@@ -5,13 +5,14 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       <div
-        className="relative flex flex-col items-center justify-center w-full gap-10 bg-center bg-cover  brightness-[3]"
+        className="relative flex flex-col items-center justify-center w-full gap-10 bg-center bg-cover"
         style={{
-          backgroundImage: "url('/hero.png')",
+          backgroundImage: "url('/home/hero.png')",
           height: "calc(100vh - 64px)",
         }}
       >
-        <div className="flex flex-col gap-2 font-semibold text-7xl">
+        <div className="absolute inset-0 backdrop-blur-md"></div>
+        <div className="z-10 flex flex-col gap-2 font-semibold text-7xl">
           <p>경기청년</p>
           <p>사다리즈</p>
           <p>프로그램</p>
@@ -27,7 +28,7 @@ export default function Home() {
       </div>
       <div className="flex flex-col items-center justify-center gap-4 text-3xl font-semibold p-60 bg-slate-50 animate-pulse">
         <p>경기청년사다리프로그램은 최고입니다.</p>
-        <p>경기청년사디리프로그램은 최고라구요.</p>
+        <p>경기청년사다리프로그램은 최고라구요.</p>
         <p>경기청년사다리프로그램은 최고라니깐요?!</p>
       </div>
       <div className="relative p-60 h-[72rem] flex flex-col gap-10 bg-white">
@@ -36,7 +37,7 @@ export default function Home() {
           <p>경기도에 거주하는</p>
           <p>청년이라면 누구나!</p>
         </div>
-        <img src="/youth.jpg" alt="youth.jpg" className="mt-6" />
+        <img src="/home/youth.jpg" alt="youth.jpg" className={`mt-6 blur-sm`} />
         <div className="absolute flex flex-col items-end gap-1 font-medium text-lg bottom-60 right-60">
           <p>
             공고일 기준 경기도(또는 특정 시)에 거주하는 19세 이상 39세 이하
@@ -109,9 +110,11 @@ export default function Home() {
         </div>
         <div className="flex flex-col gap-20 mt-20">
           <div className="flex gap-10 h-48">
-            <div className="bg-slate-300 h-full w-1/3 flex items-center justify-center text-3xl">
-              적절한 이미지 0
-            </div>
+            <img
+              className=" h-full w-1/3 bg-cover rounded-lg shadow-lg blur-sm"
+              src="/home/step1.jpg"
+              alt="/step1.jpg"
+            />
             <div className="flex flex-col gap-6 justify-center w-2/3">
               <p className="text-4xl font-semibold">0 온라인 접수</p>
               <p className="text-2xl font-medium text-slate-500">
@@ -120,9 +123,11 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-row-reverse gap-10 h-48">
-            <div className="bg-slate-300 h-full w-1/3 flex items-center justify-center text-3xl">
-              적절한 이미지 1
-            </div>
+            <img
+              className=" h-full w-1/3 bg-cover rounded-lg shadow-lg blur-sm"
+              src="/home/step2.jpg"
+              alt="/step2.jpg"
+            />
             <div className="flex flex-col gap-6 justify-center w-2/3">
               <p className="text-4xl font-semibold">1 서류 평가</p>
               <p className="text-2xl font-medium text-slate-500">
@@ -131,9 +136,11 @@ export default function Home() {
             </div>
           </div>
           <div className="flex gap-10 h-48">
-            <div className="bg-slate-300 h-full w-1/3 flex items-center justify-center text-3xl">
-              적절한 이미지 2
-            </div>
+            <img
+              className=" h-full w-1/3 bg-cover rounded-lg shadow-lg blur-sm"
+              src="/home/step3.jpg"
+              alt="/step3.jpg"
+            />
             <div className="flex flex-col gap-6 justify-center w-2/3">
               <p className="text-4xl font-semibold">2 면접 평가</p>
               <p className="text-2xl font-medium text-slate-500">
@@ -151,9 +158,11 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-row-reverse gap-10 h-48">
-            <div className="bg-slate-300 h-full w-1/3 flex items-center justify-center text-3xl">
-              적절한 이미지 3
-            </div>
+            <img
+              className=" h-full w-1/3 bg-cover rounded-lg shadow-lg blur-sm"
+              src="/home/step4.jpg"
+              alt="/step4.jpg"
+            />
             <div className="flex flex-col gap-6 justify-center w-2/3">
               <p className="text-4xl font-semibold">3 사전 교육</p>
               <p className="text-2xl font-medium text-slate-500">
@@ -162,9 +171,11 @@ export default function Home() {
             </div>
           </div>
           <div className="flex gap-10 h-48">
-            <div className="bg-slate-300 h-full w-1/3 flex items-center justify-center text-3xl">
-              적절한 이미지 4
-            </div>
+            <img
+              className=" h-full w-1/3 bg-cover rounded-lg shadow-lg blur-sm"
+              src="/home/step5.jpg"
+              alt="/step5.jpg"
+            />
             <div className="flex flex-col gap-6 justify-center w-2/3">
               <p className="text-4xl font-semibold">4 해외 대학 연수</p>
               <p className="text-2xl font-medium text-slate-500">
@@ -172,16 +183,18 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="flex flex-row-reverse gap-10 h-48">
-            <div className="bg-slate-300 h-full w-1/3 flex items-center justify-center text-3xl">
-              적절한 이미지 5
-            </div>
-            <div className="flex flex-col gap-6 justify-center w-2/3">
-              <p className="text-4xl font-semibold">5 성과 공유회</p>
-              <p className="text-2xl font-medium text-slate-500">
-                연수의 성과를 높으신 분들 앞에서 발표합니다.
-              </p>
-            </div>
+        </div>
+        <div className="flex flex-row-reverse gap-10 h-48">
+          <img
+            className=" h-full w-1/3 bg-cover rounded-lg shadow-lg blur-sm"
+            src="/home/step6.jpg"
+            alt="/step6.jpg"
+          />
+          <div className="flex flex-col gap-6 justify-center w-2/3">
+            <p className="text-4xl font-semibold">5 성과 공유회</p>
+            <p className="text-2xl font-medium text-slate-500">
+              연수의 성과를 높으신 분들 앞에서 발표합니다.
+            </p>
           </div>
         </div>
       </div>
@@ -198,7 +211,7 @@ export default function Home() {
           <div className="bg-slate-400 rounded-full w-2 h-2 animate-ping absolute top-0 right-0"></div>
         </Link>
       </div>
-      <footer className="bg-slate-800 h-[10rem] px-60 py-10 flex items-center justify-around text-white">
+      <footer className="bg-slate-800 h-40 px-60 py-10 flex items-center justify-around text-white">
         <div className="flex flex-col gap-2">
           <p className="font-bold text-lg">개발자</p>
           <p className="font-medium text-base">
