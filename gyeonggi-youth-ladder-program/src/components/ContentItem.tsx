@@ -1,6 +1,3 @@
-import Link from "next/link";
-import { format } from "date-fns";
-
 interface ContentItemProps {
   id: number;
   _id: number;

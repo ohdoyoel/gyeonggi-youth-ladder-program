@@ -9,6 +9,7 @@ export default function Page() {
     .sort((a, b) => b.start.localeCompare(a.start))
     .map((item) => (
       <ProgramItem
+        key={item.id}
         id={item.id}
         title={item.title}
         subtitle={item.subtitle}

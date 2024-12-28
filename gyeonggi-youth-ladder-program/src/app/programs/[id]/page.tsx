@@ -1,7 +1,6 @@
 import path from "path";
 import fs from "fs/promises";
 import ContentItem from "@/components/ContentItem";
-import { link } from "fs";
 
 export default async function Page({
   params,

@@ -1,6 +1,6 @@
 "use client";
 
-import { JSX, useEffect, useState } from "react";
+import { JSX, useState } from "react";
 
 interface PaginationProps {
   num: number;
