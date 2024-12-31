@@ -8,9 +8,19 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      keyframes: {
+        slideLeft: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-20%)" },
+        },
+        slideRight: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(20%)" },
+        },
+      },
+      animation: {
+        "slide-left": "slideLeft 10s linear infinite",
+        "slide-right": "slideRight 10s linear infinite",
       },
     },
   },

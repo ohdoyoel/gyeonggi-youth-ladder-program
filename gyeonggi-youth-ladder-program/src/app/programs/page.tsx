@@ -1,10 +1,27 @@
+"use client";
+
 import { Icon } from "@iconify/react";
 import ProgramItem from "@/components/ProgramItem";
 import programs from "./programs.json";
 import { dateStringToDate } from "@/utils/date";
 import Pagination from "@/components/Pagenation";
+import { useCallback, useState } from "react";
 
 export default function Page() {
+  const [imageOrderLeft, setImageOrderLeft] = useState([1, 2, 3, 4, 1]);
+
+  const updateImageOrderLeft = useCallback(() => {
+    setImageOrderLeft((prevOrder) => {
+      const newOrder = [...prevOrder];
+      newOrder.shift();
+      const firstImage = newOrder[0];
+      if (firstImage !== undefined) {
+        newOrder.push(firstImage);
+      }
+      return newOrder;
+    });
+  }, []);
+
   const programList = programs
     .sort((a, b) => b.start.localeCompare(a.start))
     .map((item) => (
@@ -20,30 +37,8 @@ export default function Page() {
 
   return (
     <div className="flex flex-col gap-10">
-      <div className="flex gap-20 px-60 py-32 ">
-        <div className="flex flex-col gap-10 w-1/2">
-          <img
-            src="/programs/img1.jpg"
-            alt="/programs/img1.jpg"
-            className="h-72 bg-cover shadow-sm rounded-lg blur-sm"
-          />
-          <img
-            src="/programs/img2.jpg"
-            alt="/programs/img2.jpg"
-            className="h-72 bg-cover shadow-sm rounded-lg blur-sm"
-          />
-          <img
-            src="/programs/img3.jpg"
-            alt="/programs/img3.jpg"
-            className="h-72 bg-cover shadow-sm rounded-lg blur-sm"
-          />
-          <img
-            src="/programs/img4.jpg"
-            alt="/programs/img4.jpg"
-            className="h-72 bg-cover shadow-sm rounded-lg blur-sm"
-          />
-        </div>
-        <div className="relative flex flex-col w-1/2 py-32 items-center ">
+      <div className="flex flex-col gap-20 mx-48 pt-16 pb-32 overflow-hidden items-center">
+        <div className=" flex flex-col w-1/2 py-16 items-center ">
           <div className="sticky top-1/3 flex flex-col gap-4 items-center">
             <p className="text-4xl font-bold">경기청년사다리프로그램의 기록</p>
             <p className="text-2xl font-medium">
@@ -54,6 +49,22 @@ export default function Page() {
               <p className="text-xl ">버튼이올시다</p>
             </button>
           </div>
+        </div>
+        <div
+          className="h-72 flex animate-slide-left justify-around bg-black py-12"
+          onAnimationIteration={updateImageOrderLeft}
+          style={{
+            width: "calc(125vw)",
+          }}
+        >
+          {imageOrderLeft.map((item, index) => (
+            <img
+              key={index}
+              src={`/programs/img${item}.jpg`}
+              alt={`/programs/img${item}.jpg`}
+              className="h-full w-1/6 object-cover shadow-sm rounded-lg"
+            />
+          ))}
         </div>
       </div>
       <div className="flex flex-col gap-20 px-60 py-32 bg-slate-900 text-white">
