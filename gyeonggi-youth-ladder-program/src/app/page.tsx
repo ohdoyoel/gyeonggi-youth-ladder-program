@@ -12,14 +12,14 @@ export default function Home() {
         }}
       >
         <div className="absolute inset-0 backdrop-blur-md"></div>
-        <div className="z-10 flex flex-col gap-2 font-bold text-7xl">
+        <div className="z-10 flex flex-col gap-2 font-bold text-6xl">
           <p>경기청년</p>
           <p>사다리즈</p>
           <p>프로그램</p>
         </div>
-        <button className="flex gap-2 px-4 py-2 items-center text-white bg-slate-900 rounded-lg opacity-70">
-          <Icon icon="material-symbols:link" className="text-2xl" />
-          <p className="text-xl ">버튼이올시다</p>
+        <button className="flex gap-2 px-4 py-2 items-center text-white bg-slate-900 rounded-lg opacity-70 text-lg">
+          <Icon icon="material-symbols:link" />
+          <p>버튼이올시다</p>
         </button>
         <Icon
           icon="material-symbols:arrow-drop-down-rounded"
@@ -51,62 +51,12 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="relative p-60 flex flex-col gap-10 bg-slate-50">
-        <p className="text-2xl font-semibold text-slate-800">지원 내용</p>
-        <div className="flex flex-col gap-6 text-5xl font-bold">
-          <p>준비는 다 해두었으니,</p>
-          <p>편하게 몸만 오세요.</p>
-        </div>
-        <div className="grid grid-cols-2 w-full gap-20 mt-10">
-          <div className="flex flex-col gap-6">
-            <Icon icon="twemoji:airplane" className="text-9xl" />
-            <p className="text-3xl font-semibold">항공권</p>
-            <p className="text-xl font-medium text-slate-500">
-              n00만원 상당의 비행기 티켓값을 지원해요.
-            </p>
-          </div>
-          <div className="flex flex-col gap-6">
-            <Icon icon="twemoji:school" className="text-9xl" />
-            <p className="text-3xl font-semibold">해외대학연수비</p>
-            <p className="text-xl font-medium text-slate-500">
-              해외 유명 대학 어학원에서 수업을 들을 수 있어요.
-            </p>
-          </div>
-          <div className="flex flex-col gap-6">
-            <Icon icon="twemoji:house-with-garden" className="text-9xl" />
-            <p className="text-3xl font-semibold">숙식비</p>
-            <p className="text-xl font-medium text-slate-500">
-              어학원 주변 숙소와 식비를 지원해요.
-            </p>
-          </div>
-          <div className="flex flex-col gap-6">
-            <Icon icon="twemoji:oncoming-bus" className="text-9xl" />
-            <p className="text-3xl font-semibold">교통패스</p>
-            <p className="text-xl font-medium text-slate-500">
-              연수 기간 동안 어디든 갈 수 있도록, 교통비를 지원해요.
-            </p>
-          </div>
-          <div className="flex flex-col gap-6">
-            <Icon icon="twemoji:safety-vest" className="text-9xl" />
-            <p className="text-3xl font-semibold">현지 보험</p>
-            <p className="text-xl font-medium text-slate-500">
-              낯선 해외에서 무슨 일이 생겨도 안전해요.
-            </p>
-          </div>
-          <div className="flex flex-col gap-6">
-            <Icon icon="twemoji:rocket" className="text-9xl" />
-            <p className="text-3xl font-semibold">네트워킹 및 사후 관리</p>
-            <p className="text-xl font-medium text-slate-500">
-              프로그램이 끝난 후에도 연수 경험의 가치는 계속돼요.
-            </p>
-          </div>
-        </div>
-      </div>
+
       <div className="relative p-60 flex flex-col gap-10 bg-white">
         <p className="text-2xl font-semibold text-slate-800">선발 과정</p>
         <div className="flex flex-col gap-6 text-5xl font-bold">
-          <p>누구나 지원할 수 있다고 해서,</p>
-          <p>아무나 뽑힐 수 있는 것은 아닙니다.</p>
+          <p>철저한 검증을 통해,</p>
+          <p>경기도의 청년 인재를 찾습니다.</p>
         </div>
         <div className="flex flex-col gap-20 mt-20">
           <div className="flex gap-10 h-48">
@@ -193,12 +143,63 @@ export default function Home() {
           <div className="flex flex-col gap-6 justify-center w-2/3">
             <p className="text-4xl font-semibold">5 성과 공유회</p>
             <p className="text-2xl font-medium text-slate-500">
-              연수의 성과를 높으신 분들 앞에서 발표합니다.
+              연수의 성과를 주요 관계자들 앞에서 발표합니다.
             </p>
           </div>
         </div>
       </div>
-      <div className="bg-slate-50 p-60 h-[30rem] flex flex-col gap-6 items-center justify-center">
+      <div className="relative p-60 flex flex-col gap-10 bg-slate-50">
+        <p className="text-2xl font-semibold text-slate-800">지원 내용</p>
+        <div className="flex flex-col gap-6 text-5xl font-bold">
+          <p>준비는 다 해두었으니,</p>
+          <p>편하게 몸만 오세요.</p>
+        </div>
+        <div className="grid grid-cols-2 w-full gap-20 mt-10">
+          <div className="flex flex-col gap-6">
+            <Icon icon="twemoji:airplane" className="text-9xl" />
+            <p className="text-3xl font-semibold">항공권</p>
+            <p className="text-xl font-medium text-slate-500">
+              n00만원 상당의 비행기 티켓값을 지원해요.
+            </p>
+          </div>
+          <div className="flex flex-col gap-6">
+            <Icon icon="twemoji:school" className="text-9xl" />
+            <p className="text-3xl font-semibold">해외대학연수비</p>
+            <p className="text-xl font-medium text-slate-500">
+              해외 유명 대학 어학원에서 수업을 들을 수 있어요.
+            </p>
+          </div>
+          <div className="flex flex-col gap-6">
+            <Icon icon="twemoji:house-with-garden" className="text-9xl" />
+            <p className="text-3xl font-semibold">숙식비</p>
+            <p className="text-xl font-medium text-slate-500">
+              어학원 주변 숙소와 식비를 지원해요.
+            </p>
+          </div>
+          <div className="flex flex-col gap-6">
+            <Icon icon="twemoji:oncoming-bus" className="text-9xl" />
+            <p className="text-3xl font-semibold">교통패스</p>
+            <p className="text-xl font-medium text-slate-500">
+              연수 기간 동안 어디든 갈 수 있도록, 교통비를 지원해요.
+            </p>
+          </div>
+          <div className="flex flex-col gap-6">
+            <Icon icon="twemoji:safety-vest" className="text-9xl" />
+            <p className="text-3xl font-semibold">현지 보험</p>
+            <p className="text-xl font-medium text-slate-500">
+              낯선 해외에서 무슨 일이 생겨도 안전해요.
+            </p>
+          </div>
+          <div className="flex flex-col gap-6">
+            <Icon icon="twemoji:rocket" className="text-9xl" />
+            <p className="text-3xl font-semibold">네트워킹 및 사후 관리</p>
+            <p className="text-xl font-medium text-slate-500">
+              프로그램이 끝난 후에도 연수 경험의 가치는 계속돼요.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="bg-white p-60 h-[30rem] flex flex-col gap-6 items-center justify-center">
         <p className="font-bold text-4xl">
           경기청년사다리프로그램의 새 소식을 들어보세요.
         </p>
@@ -213,10 +214,11 @@ export default function Home() {
       </div>
       <footer className="bg-slate-800 h-40 px-60 py-10 flex items-center justify-around text-white">
         <div className="flex flex-col gap-2">
-          <p className="font-bold text-lg">개발자</p>
-          <p className="font-medium text-base">
-            포천시 경기청년사다리 1기 오도열
-          </p>
+          <p className="font-bold text-lg">페이지 제작</p>
+          <div className="flex flex-col gap-1 font-medium text-base">
+            <p>Dev By 2024년 포천시 경기청년사다리프로그램 오도열</p>
+            <p>Design By 2024년 포천시 경기청년사다리프로그램 안가연</p>
+          </div>
         </div>
         <div className="flex flex-col gap-2">
           <p className="font-bold text-lg">도움</p>
