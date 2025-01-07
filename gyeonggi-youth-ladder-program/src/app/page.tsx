@@ -66,7 +66,7 @@ export default function Home() {
               alt="/step1.jpg"
             />
             <div className="flex flex-col gap-6 justify-center w-2/3">
-              <p className="text-4xl font-semibold">0 온라인 접수</p>
+              <p className="text-4xl font-semibold">1 온라인 접수</p>
               <p className="text-2xl font-medium text-slate-500">
                 각종 서류들을 온라인으로 접수합니다. (자기계발계획서 등)
               </p>
@@ -79,7 +79,7 @@ export default function Home() {
               alt="/step2.jpg"
             />
             <div className="flex flex-col gap-6 justify-center w-2/3">
-              <p className="text-4xl font-semibold">1 서류 평가</p>
+              <p className="text-4xl font-semibold">2 서류 평가</p>
               <p className="text-2xl font-medium text-slate-500">
                 자기개발계획서 내용을 바탕으로 발전 가능성을 평가합니다.
               </p>
@@ -92,7 +92,7 @@ export default function Home() {
               alt="/step3.jpg"
             />
             <div className="flex flex-col gap-6 justify-center w-2/3">
-              <p className="text-4xl font-semibold">2 면접 평가</p>
+              <p className="text-4xl font-semibold">3 면접 평가</p>
               <p className="text-2xl font-medium text-slate-500">
                 다대다 면접 방식으로 평가합니다.
               </p>
@@ -114,7 +114,7 @@ export default function Home() {
               alt="/step4.jpg"
             />
             <div className="flex flex-col gap-6 justify-center w-2/3">
-              <p className="text-4xl font-semibold">3 사전 교육</p>
+              <p className="text-4xl font-semibold">4 사전 교육</p>
               <p className="text-2xl font-medium text-slate-500">
                 대면/비대면 교육으로 해외 연수를 준비합니다.
               </p>
@@ -127,7 +127,7 @@ export default function Home() {
               alt="/step5.jpg"
             />
             <div className="flex flex-col gap-6 justify-center w-2/3">
-              <p className="text-4xl font-semibold">4 해외 대학 연수</p>
+              <p className="text-4xl font-semibold">5 해외 대학 연수</p>
               <p className="text-2xl font-medium text-slate-500">
                 해외 대학을 연수하며 활동을 진행합니다.
               </p>
@@ -141,7 +141,7 @@ export default function Home() {
             alt="/step6.jpg"
           />
           <div className="flex flex-col gap-6 justify-center w-2/3">
-            <p className="text-4xl font-semibold">5 성과 공유회</p>
+            <p className="text-4xl font-semibold">6 성과 공유회</p>
             <p className="text-2xl font-medium text-slate-500">
               연수의 성과를 주요 관계자들 앞에서 발표합니다.
             </p>
