@@ -19,8 +19,9 @@ export default async function Page({
     const jsonData = await fs.readFile(jsonFilePath, "utf8");
     const data = JSON.parse(jsonData);
 
-    const contents = data.contents.map(
-      (item: { _id: number; title: string; link: string }) => (
+    const contents = data.contents
+      .reverse()
+      .map((item: { _id: number; title: string; link: string }) => (
         <ContentItem
           key={item._id}
           id={id}
@@ -28,8 +29,7 @@ export default async function Page({
           title={item.title}
           link={item.link}
         />
-      )
-    );
+      ));
     const people = data.people.map(
       (item: { name: string; contact: string }) => (
         <a
@@ -78,7 +78,7 @@ export default async function Page({
           height: "calc(100vh - 64px)",
         }}
       >
-        데이터가 준비되지 않았어요. 😱
+        데이터 오픈 준비 중이에요. 🤔
       </div>
     );
   }
