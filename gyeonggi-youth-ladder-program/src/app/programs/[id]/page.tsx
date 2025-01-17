@@ -65,7 +65,7 @@ export default async function Page({
         </div>
         <div className="flex flex-col gap-10 px-60 mt-10">
           <p className="text-4xl font-bold">피플</p>
-          <div className="flex flex-wrap justify-center gap-6">{people}</div>
+          <div className="grid grid-cols-6 justify-center gap-2">{people}</div>
         </div>
       </div>
     );

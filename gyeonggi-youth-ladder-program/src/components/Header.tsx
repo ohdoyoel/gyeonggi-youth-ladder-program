@@ -10,7 +10,7 @@ export default function Header() {
         href="/programs"
         className="px-4 py-2 rounded-lg hover:bg-slate-100"
       >
-        아카이브
+        스토리
       </Link>
     </div>
   );

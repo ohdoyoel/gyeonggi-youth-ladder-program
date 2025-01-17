@@ -3,6 +3,7 @@ import ProgramItem from "@/components/ProgramItem";
 import programs from "./programs.json";
 import { dateStringToDate } from "@/utils/date";
 import Pagination from "@/components/Pagenation";
+import Link from "next/link";
 
 export default function Page() {
   const programList = programs
@@ -49,16 +50,20 @@ export default function Page() {
             <p className="text-2xl font-medium">
               프로그램의 연수 내용을 기록합니다.
             </p>
-            {/* <button className="flex w-fit gap-2 px-4 py-2 items-center text-white bg-slate-900 rounded-lg opacity-70">
-              <Icon icon="material-symbols:link" className="text-2xl" />
-              <p className="text-xl ">버튼이올시다</p>
-            </button> */}
           </div>
         </div>
       </div>
       <div className="flex flex-col gap-20 px-60 py-32 bg-slate-900 text-white">
         <p className="text-4xl font-bold">경기청년사다리프로그램의 피드</p>
         <Pagination data={programList} num={5} />
+        <Link
+          href="/programs"
+          className="relative flex flex-row gap-2 px-4 py-2 w-fit justify-center items-center text-white bg-slate-600 rounded-lg"
+        >
+          <Icon icon="material-symbols:link" className="text-2xl" />
+          <p className="font-semibold text-xl ">경기청년사다리프로그램</p>
+          <div className="bg-slate-400 rounded-full w-2 h-2 animate-ping absolute top-0 right-0"></div>
+        </Link>
       </div>
     </div>
   );
