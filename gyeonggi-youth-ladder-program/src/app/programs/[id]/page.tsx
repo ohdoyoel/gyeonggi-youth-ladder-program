@@ -19,8 +19,9 @@ export default async function Page({
     const jsonData = await fs.readFile(jsonFilePath, "utf8");
     const data = JSON.parse(jsonData);
 
-    const contents = data.contents.map(
-      (item: { _id: number; title: string; link: string }) => (
+    const contents = data.contents
+      .reverse()
+      .map((item: { _id: number; title: string; link: string }) => (
         <ContentItem
           key={item._id}
           id={id}
@@ -28,8 +29,7 @@ export default async function Page({
           title={item.title}
           link={item.link}
         />
-      )
-    );
+      ));
     const people = data.people.map(
       (item: { name: string; contact: string }) => (
         <a
@@ -46,26 +46,30 @@ export default async function Page({
     return (
       <div className="flex flex-col gap-10 pb-32">
         <img
-          className="h-72 object-top object-cover"
+          className="h-72 object-top object-cover hidden sm:block"
           src={`/programs/covers/${id}.jpg`}
           alt={`/programs/covers/${id}.jpg`}
         />
-        <div className="flex flex-col gap-10 px-60 mt-10">
-          <p className="text-5xl font-bold">{data.title}</p>
-          <div className="flex justify-between items-end">
-            <p className="text-3xl font-semibold">{data.subtitle}</p>
-            <p className="text-xl font-semibold">
+        <div className="flex flex-col gap-4 sm:gap-10  px-4 md:px-16 lg:px-32 xl:px-60 mt-10">
+          <p className="text-4xl sm:text-5xl font-bold">{data.title}</p>
+          <div className="flex flex-col sm:flex-row justify-between items-end">
+            <p className="text-xl sm:text-3xl font-semibold">{data.subtitle}</p>
+            <p className="text-xs sm:text-xl font-semibold">
               {data.start} ~ {data.end}
             </p>
           </div>
         </div>
-        <div className="flex flex-col gap-10 px-60 mt-10">
-          <p className="text-4xl font-bold">컨텐츠</p>
-          <div className="grid grid-cols-4 gap-10 ">{contents}</div>
+        <div className="flex flex-col gap-10 px-4 md:px-16 lg:px-32 xl:px-60 sm:mt-10">
+          <p className="text-3xl sm:text-4xl font-bold">컨텐츠</p>
+          <div className="flex flex-wrap justify-between gap-y-6">
+            {contents}
+          </div>
         </div>
-        <div className="flex flex-col gap-10 px-60 mt-10">
-          <p className="text-4xl font-bold">피플</p>
-          <div className="flex flex-wrap justify-center gap-6">{people}</div>
+        <div className="flex flex-col gap-10 px-4 md:px-16 lg:px-32 xl:px-60 mt-10">
+          <p className="text-3xl sm:text-4xl font-bold">피플</p>
+          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-y-2 gap-x-12 justify-between">
+            {people}
+          </div>
         </div>
       </div>
     );
@@ -73,12 +77,12 @@ export default async function Page({
     console.log(error);
     return (
       <div
-        className="px-60 py-32 flex w-full justify-center items-center text-5xl font-bold"
+        className="px-4 md:px-16 lg:px-32 xl:px-60  py-32 flex w-full justify-center items-center text-5xl text-center font-bold"
         style={{
           height: "calc(100vh - 64px)",
         }}
       >
-        데이터가 준비되지 않았어요. 😱
+        데이터 오픈 준비 중이에요. 🤔
       </div>
     );
   }
