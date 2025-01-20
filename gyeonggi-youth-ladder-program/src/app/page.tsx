@@ -80,7 +80,7 @@ export default function Home() {
           <p>철저한 검증을 통해,</p>
           <p>경기도의 청년 인재를 찾습니다.</p>
         </div>
-        <div className="flex flex-col mt-10 sm:mt-20">
+        <div className="flex flex-col sm:mt-20">
           <div className="flex gap-4 sm:gap-10 h-24 sm:h-48 my-4 sm:my-10">
             <img
               className=" h-full w-1/3 bg-cover rounded-lg shadow-lg blur-sm object-cover"
@@ -88,15 +88,12 @@ export default function Home() {
               alt="/step1.jpg"
             />
             <div className="flex flex-col gap-2 sm:gap-6 justify-center w-2/3">
-              <p className="text-2xl sm:text-4xl font-semibold">
-                1 온라인 접수
-              </p>
+              <p className="text-xl sm:text-4xl font-semibold">1 온라인 접수</p>
               <p className="text-sm sm:text-2xl font-medium text-slate-500 text-pretty">
                 필요한 서류를 온라인으로 접수합니다. (자기계발계획서 등)
               </p>
             </div>
           </div>
-          <div className="w-full h-[1px] bg-slate-400 blur-sm" />
           <div className="flex flex-row-reverse gap-4 sm:gap-10 h-24 sm:h-48  my-4 sm:my-10">
             <img
               className=" h-full w-1/3 bg-cover rounded-lg shadow-lg blur-sm object-cover"
@@ -104,13 +101,12 @@ export default function Home() {
               alt="/step2.jpg"
             />
             <div className="flex flex-col gap-2 sm:gap-6  justify-center w-2/3">
-              <p className="text-2xl sm:text-4xl font-semibold">2 서류 평가</p>
+              <p className="text-xl sm:text-4xl font-semibold">2 서류 평가</p>
               <p className="text-sm sm:text-2xl font-medium text-slate-500 text-pretty">
                 제출한 자기개발계획서를 바탕으로 성장 가능성을 평가합니다.
               </p>
             </div>
           </div>
-          <div className="w-full h-[1px] bg-slate-300 blur-sm" />
           <div className="flex gap-4 sm:gap-10 h-24 sm:h-48  my-4 sm:my-10">
             <img
               className=" h-full w-1/3 bg-cover rounded-lg shadow-lg blur-sm object-cover"
@@ -118,7 +114,7 @@ export default function Home() {
               alt="/step3.jpg"
             />
             <div className="flex flex-col gap-2 sm:gap-6 justify-center w-2/3">
-              <p className="text-2xl sm:text-4xl font-semibold">3 면접 평가</p>
+              <p className="text-xl sm:text-4xl font-semibold">3 면접 평가</p>
               <p className="text-sm sm:text-2xl font-medium text-slate-500 text-pretty">
                 지원자의 역량, 태도, 그리고 잠재력을 종합적으로 판단합니다.
               </p>
@@ -131,7 +127,6 @@ export default function Home() {
             </p>
             <p>** 어학 능력은 선발 기준에 포함되지 않습니다.</p>
           </div>
-          <div className="w-full h-[1px] bg-slate-400 blur-sm" />
           <div className="flex flex-row-reverse gap-4 sm:gap-10 h-24 sm:h-48  my-4 sm:my-10">
             <img
               className=" h-full w-1/3 bg-cover rounded-lg shadow-lg blur-sm object-cover"
@@ -139,13 +134,12 @@ export default function Home() {
               alt="/step4.jpg"
             />
             <div className="flex flex-col gap-2 sm:gap-6  justify-center w-2/3">
-              <p className="text-2xl sm:text-4xl font-semibold">4 사전 교육</p>
+              <p className="text-xl sm:text-4xl font-semibold">4 사전 교육</p>
               <p className="text-sm sm:text-2xl  font-medium text-slate-500 text-pretty">
                 대면/비대면 교육으로 해외 연수를 준비합니다.
               </p>
             </div>
           </div>
-          <div className="w-full h-[1px] bg-slate-400 blur-sm" />
           <div className="flex gap-4 sm:gap-10 h-24 sm:h-48  my-4 sm:my-10">
             <img
               className=" h-full w-1/3 bg-cover rounded-lg shadow-lg blur-sm object-cover"
@@ -153,7 +147,7 @@ export default function Home() {
               alt="/step5.jpg"
             />
             <div className="flex flex-col gap-2 sm:gap-6  justify-center w-2/3">
-              <p className="text-2xl sm:text-4xl font-semibold">
+              <p className="text-xl sm:text-4xl font-semibold">
                 5 해외 대학 연수
               </p>
               <p className="text-sm sm:text-2xl font-medium text-slate-500 text-pretty">
@@ -161,7 +155,6 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="w-full h-[1px] bg-slate-400 blur-sm" />
           <div className="flex flex-row-reverse gap-4 sm:gap-10 h-24 sm:h-48  my-4 sm:my-10">
             <img
               className=" h-full w-1/3 bg-cover rounded-lg shadow-lg blur-sm object-cover"
@@ -169,9 +162,7 @@ export default function Home() {
               alt="/step6.jpg"
             />
             <div className="flex flex-col gap-2 sm:gap-6 justify-center w-2/3">
-              <p className="text-2xl sm:text-4xl font-semibold">
-                6 성과 공유회
-              </p>
+              <p className="text-xl sm:text-4xl font-semibold">6 성과 공유회</p>
               <p className="text-sm sm:text-2xl font-medium text-slate-500 text-pretty">
                 프로젝트나 활동의 결과를 공유하고 발표합니다.
               </p>

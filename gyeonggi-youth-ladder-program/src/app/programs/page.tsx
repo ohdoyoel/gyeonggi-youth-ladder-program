@@ -57,7 +57,7 @@ export default function Page() {
             프로그램의 연수 내용을 기록합니다.
           </p>
         </div>
-        <div
+        {/* <div
           className="h-72 flex animate-slide-left justify-around bg-black py-12"
           onAnimationIteration={updateImageOrderLeft}
           style={{
@@ -72,7 +72,7 @@ export default function Page() {
               className="h-full w-1/6 object-cover shadow-sm rounded-lg"
             />
           ))}
-        </div>
+        </div> */}
       </div>
       <div className=" flex flex-col gap-20 py-32 px-4 md:px-16 lg:px-32 xl:px-60  bg-slate-900 text-white">
         <p className="text-2xl sm:text-4xl font-bold">

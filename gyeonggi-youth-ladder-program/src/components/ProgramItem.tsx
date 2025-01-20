@@ -19,7 +19,7 @@ export default function ProgramItem({
   return (
     <Link
       href={`/programs/${id}`}
-      className="flex flex-col-reverse sm:flex-row gap-4 justify-between items-center group transition ease-in-out duration-300 hover:-translate-y-1 hover:scale-105 "
+      className="flex flex-col-reverse sm:flex-row gap-4 justify-between items-center group transition ease-in-out duration-300 hover:-translate-y-1 hover:scale-102 "
     >
       <div className="flex flex-col gap-2">
         <p className="text-xl sm:text-3xl font-semibold transition ease-in-out duration-300 group-hover:text-slate-300">
