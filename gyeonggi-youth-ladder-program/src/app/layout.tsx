@@ -6,6 +6,11 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "경기청년사다리프로그램",
   description: "경기청년사다리프로그램",
+  verification: {
+    other: {
+      "naver-site-verification": "f5c3111382fb0a939cafbfa33f6b4f3c709b4242",
+    },
+  },
 };
 
 const noto_sans_kr = Noto_Sans_KR({
