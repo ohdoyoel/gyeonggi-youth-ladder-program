@@ -1,7 +1,7 @@
 "use client";
 
 import { Icon } from "@iconify/react";
-import { useCallback, useState } from "react";
+// import { useCallback, useState } from "react";
 import ProgramItem from "@/components/ProgramItem";
 import programs from "./programs.json";
 import { dateStringToDate } from "@/utils/date";
@@ -9,19 +9,19 @@ import Pagination from "@/components/Pagenation";
 import Link from "next/link";
 
 export default function Page() {
-  const [imageOrderLeft, setImageOrderLeft] = useState([1, 2, 3, 4, 1]);
+  // const [imageOrderLeft, setImageOrderLeft] = useState([1, 2, 3, 4, 1]);
 
-  const updateImageOrderLeft = useCallback(() => {
-    setImageOrderLeft((prevOrder) => {
-      const newOrder = [...prevOrder];
-      newOrder.shift();
-      const firstImage = newOrder[0];
-      if (firstImage !== undefined) {
-        newOrder.push(firstImage);
-      }
-      return newOrder;
-    });
-  }, []);
+  // const updateImageOrderLeft = useCallback(() => {
+  //   setImageOrderLeft((prevOrder) => {
+  //     const newOrder = [...prevOrder];
+  //     newOrder.shift();
+  //     const firstImage = newOrder[0];
+  //     if (firstImage !== undefined) {
+  //       newOrder.push(firstImage);
+  //     }
+  //     return newOrder;
+  //   });
+  // }, []);
 
   const programList = programs
     .sort((a, b) => b.start.localeCompare(a.start))
