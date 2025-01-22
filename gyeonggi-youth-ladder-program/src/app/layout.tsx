@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "경기청년사다리프로그램",
   description: "경기청년사다리, 도전과 성장을 위한 여정!",
   verification: {
-    google: "r7IZj-aJquZ7-yZsDNiYJjpor8az4u72FinZLPI3kcA",
+    google: "Eg7oOA_tg1teLw7UGExt_Rak-C-Apo4AELjSrxvWQig",
     other: {
       "naver-site-verification": "f5c3111382fb0a939cafbfa33f6b4f3c709b4242",
     },
