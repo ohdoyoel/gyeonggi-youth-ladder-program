@@ -6,6 +6,18 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "경기청년사다리프로그램",
   description: "경기청년사다리, 도전과 성장을 위한 여정!",
+  openGraph: {
+    type: "website",
+    url: "https://gyeonggi-youth-ladder-program.netlify.app/",
+    title: "경기청년사다리프로그램",
+    description: "경기청년사다리, 도전과 성장을 위한 여정!",
+    siteName: "경기청년사다리프로그램",
+    images: [
+      {
+        url: "/og-image.png",
+      },
+    ],
+  },
   verification: {
     google: "Eg7oOA_tg1teLw7UGExt_Rak-C-Apo4AELjSrxvWQig",
     other: {
