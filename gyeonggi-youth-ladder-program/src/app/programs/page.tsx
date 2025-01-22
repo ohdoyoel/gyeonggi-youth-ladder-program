@@ -32,7 +32,7 @@ export default function Page() {
         <img
           src="/programs/img1.jpg"
           alt="/programs/img1.jpg"
-          className="h-72 bg-cover shadow-sm rounded-lg blur-sm w-1/2 hidden sm:block"
+          className="h-72 bg-cover shadow-sm rounded-lg w-1/2 hidden sm:block"
         />
         <div className="relative flex flex-col gap-4 w-full sm:w-1/2 items-center justify-center text-white">
           <p className="text-2xl sm:text-4xl font-bold">
