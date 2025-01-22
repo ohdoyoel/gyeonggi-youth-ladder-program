@@ -50,11 +50,7 @@ export default function Home() {
           <p>청년이라면 누구나!</p>
         </div>
         <div className="flex flex-col gap-12">
-          <img
-            src="/home/youth.jpg"
-            alt="youth.jpg"
-            className={`mt-6 blur-sm`}
-          />
+          <img src="/home/youth.jpg" alt="youth.jpg" className={`mt-6`} />
           <div className="flex flex-col items-end gap-1 font-medium text-[8px] sm:text-lg bottom-60  right-4 md:right-16 lg:right-32 xl:right-60">
             <p>
               경기도에 거주하는 19세 이상 39세 이하 청년이라면 누구나 참여할 수
@@ -83,7 +79,7 @@ export default function Home() {
         <div className="flex flex-col sm:mt-20">
           <div className="flex gap-4 sm:gap-10 h-24 sm:h-48 my-4 sm:my-10">
             <img
-              className=" h-full w-1/3 bg-cover rounded-lg shadow-lg blur-sm object-cover"
+              className=" h-full w-1/3 bg-cover rounded-lg shadow-lg object-cover"
               src="/home/step1.jpg"
               alt="/step1.jpg"
             />
@@ -96,7 +92,7 @@ export default function Home() {
           </div>
           <div className="flex flex-row-reverse gap-4 sm:gap-10 h-24 sm:h-48  my-4 sm:my-10">
             <img
-              className=" h-full w-1/3 bg-cover rounded-lg shadow-lg blur-sm object-cover"
+              className=" h-full w-1/3 bg-cover rounded-lg shadow-lg object-cover"
               src="/home/step2.jpg"
               alt="/step2.jpg"
             />
@@ -109,7 +105,7 @@ export default function Home() {
           </div>
           <div className="flex gap-4 sm:gap-10 h-24 sm:h-48  my-4 sm:my-10">
             <img
-              className=" h-full w-1/3 bg-cover rounded-lg shadow-lg blur-sm object-cover"
+              className=" h-full w-1/3 bg-cover rounded-lg shadow-lg object-cover"
               src="/home/step3.jpg"
               alt="/step3.jpg"
             />
@@ -129,7 +125,7 @@ export default function Home() {
           </div>
           <div className="flex flex-row-reverse gap-4 sm:gap-10 h-24 sm:h-48  my-4 sm:my-10">
             <img
-              className=" h-full w-1/3 bg-cover rounded-lg shadow-lg blur-sm object-cover"
+              className=" h-full w-1/3 bg-cover rounded-lg shadow-lg object-cover"
               src="/home/step4.jpg"
               alt="/step4.jpg"
             />
@@ -142,7 +138,7 @@ export default function Home() {
           </div>
           <div className="flex gap-4 sm:gap-10 h-24 sm:h-48  my-4 sm:my-10">
             <img
-              className=" h-full w-1/3 bg-cover rounded-lg shadow-lg blur-sm object-cover"
+              className=" h-full w-1/3 bg-cover rounded-lg shadow-lg object-cover"
               src="/home/step5.jpg"
               alt="/step5.jpg"
             />
@@ -157,7 +153,7 @@ export default function Home() {
           </div>
           <div className="flex flex-row-reverse gap-4 sm:gap-10 h-24 sm:h-48  my-4 sm:my-10">
             <img
-              className=" h-full w-1/3 bg-cover rounded-lg shadow-lg blur-sm object-cover"
+              className=" h-full w-1/3 bg-cover rounded-lg shadow-lg object-cover"
               src="/home/step6.jpg"
               alt="/step6.jpg"
             />
