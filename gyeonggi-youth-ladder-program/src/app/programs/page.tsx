@@ -1,7 +1,6 @@
 "use client";
 
 import { Icon } from "@iconify/react";
-// import { useCallback, useState } from "react";
 import ProgramItem from "@/components/ProgramItem";
 import programs from "./programs.json";
 import { dateStringToDate } from "@/utils/date";
@@ -9,20 +8,6 @@ import Pagination from "@/components/Pagenation";
 import Link from "next/link";
 
 export default function Page() {
-  // const [imageOrderLeft, setImageOrderLeft] = useState([1, 2, 3, 4, 1]);
-
-  // const updateImageOrderLeft = useCallback(() => {
-  //   setImageOrderLeft((prevOrder) => {
-  //     const newOrder = [...prevOrder];
-  //     newOrder.shift();
-  //     const firstImage = newOrder[0];
-  //     if (firstImage !== undefined) {
-  //       newOrder.push(firstImage);
-  //     }
-  //     return newOrder;
-  //   });
-  // }, []);
-
   const programList = programs
     .sort((a, b) => b.start.localeCompare(a.start))
     .map((item) => (
@@ -57,22 +42,6 @@ export default function Page() {
             프로그램의 연수 내용을 기록합니다.
           </p>
         </div>
-        {/* <div
-          className="h-72 flex animate-slide-left justify-around bg-black py-12"
-          onAnimationIteration={updateImageOrderLeft}
-          style={{
-            width: "calc(125vw)",
-          }}
-        >
-          {imageOrderLeft.map((item, index) => (
-            <img
-              key={index}
-              src={`/programs/img${item}.jpg`}
-              alt={`/programs/img${item}.jpg`}
-              className="h-full w-1/6 object-cover shadow-sm rounded-lg"
-            />
-          ))}
-        </div> */}
       </div>
       <div className=" flex flex-col gap-20 py-32 px-4 md:px-16 lg:px-32 xl:px-60  bg-slate-900 text-white">
         <p className="text-2xl sm:text-4xl font-bold">

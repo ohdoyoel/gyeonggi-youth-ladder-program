@@ -11,17 +11,17 @@ export default async function Page({
   const jsonFilePath = path.join(
     process.cwd(),
     "public",
-    "programs/detail",
-    `${id}.json`
+    "programs",
+    `${id}`,
+    "detail.json"
   );
 
   try {
     const jsonData = await fs.readFile(jsonFilePath, "utf8");
     const data = JSON.parse(jsonData);
 
-    const contents = data.contents
-      .reverse()
-      .map((item: { _id: number; title: string; link: string }) => (
+    const contents = data.contents.map(
+      (item: { _id: number; title: string; link: string }) => (
         <ContentItem
           key={item._id}
           id={id}
@@ -29,7 +29,8 @@ export default async function Page({
           title={item.title}
           link={item.link}
         />
-      ));
+      )
+    );
     const people = data.people.map(
       (item: { name: string; contact: string }) => (
         <a
@@ -47,8 +48,8 @@ export default async function Page({
       <div className="flex flex-col gap-10 pb-32">
         <img
           className="h-72 object-top object-cover hidden sm:block"
-          src={`/programs/covers/${id}.jpg`}
-          alt={`/programs/covers/${id}.jpg`}
+          src={`/programs/${id}/banner.png`}
+          alt={`/programs/${id}/banner.png`}
         />
         <div className="flex flex-col gap-4 sm:gap-10  px-4 md:px-16 lg:px-32 xl:px-60 mt-10">
           <p className="text-4xl sm:text-5xl font-bold">{data.title}</p>

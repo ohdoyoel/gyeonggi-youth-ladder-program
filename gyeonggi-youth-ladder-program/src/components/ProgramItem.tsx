@@ -31,8 +31,8 @@ export default function ProgramItem({
         </p>
       </div>
       <img
-        src={`/programs/covers/${id}.jpg`}
-        alt={`/programs/covers/${id}.jpg`}
+        src={`/programs/${id}/cover.jpg`}
+        alt={`/programs/${id}/cover.jpg`}
         className="h-48 w-72 rounded-lg"
       />
     </Link>
