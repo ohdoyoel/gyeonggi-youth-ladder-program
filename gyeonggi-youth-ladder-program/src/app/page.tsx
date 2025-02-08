@@ -13,9 +13,8 @@ export default function Home() {
       >
         <div className="absolute inset-0 backdrop-blur-md"></div>
         <div className="z-10 flex flex-col gap-2 font-bold text-7xl">
-          <p>경기청년</p>
+          <p>오클랜드</p>
           <p>사다리즈</p>
-          <p>프로그램</p>
         </div>
         <div className="flex gap-6">
           <button className="flex gap-2 px-4 py-2 items-center text-white bg-slate-900 rounded-lg opacity-70 text-lg">
