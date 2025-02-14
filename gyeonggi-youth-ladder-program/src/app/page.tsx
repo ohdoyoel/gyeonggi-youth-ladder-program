@@ -17,16 +17,16 @@ export default function Home() {
           <p>사다리즈</p>
         </div>
         <div className="flex gap-6">
-          <button className="flex gap-2 px-4 py-2 items-center text-white bg-slate-900 rounded-lg opacity-70 text-lg">
+          {/* <button className="flex gap-2 px-4 py-2 items-center text-white bg-slate-900 rounded-lg opacity-70 text-lg">
             <Icon icon="material-symbols:link" />
             <p>지원하기</p>
-          </button>
+          </button> */}
           <Link
             href="/programs"
             className="relative flex gap-2 px-4 py-2 items-center w-fit text-white bg-slate-900 rounded-lg opacity-70 text-lg"
           >
             <Icon icon="material-symbols:link" />
-            <p>피드</p>
+            <p>이야기</p>
             <div className="bg-slate-400 rounded-full w-2 h-2 animate-ping absolute top-0 right-0"></div>
           </Link>
         </div>
@@ -253,7 +253,7 @@ export default function Home() {
           className="relative flex gap-2 px-4 py-2 items-center text-white bg-slate-900 rounded-lg opacity-70"
         >
           <Icon icon="material-symbols:link" className="text-2xl" />
-          <p className="font-semibold text-xl ">스토리</p>
+          <p className="font-semibold text-xl ">이야기</p>
           <div className="bg-slate-400 rounded-full w-2 h-2 animate-ping absolute top-0 right-0"></div>
         </Link>
       </div>

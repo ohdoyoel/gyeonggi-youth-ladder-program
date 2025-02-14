@@ -14,6 +14,7 @@ export default function ContentItem({
   return (
     <a
       href={link}
+      target="_blank"
       className="relative h-36 sm:h-72 w-[104px] sm:w-56 bg-cover bg-center transition ease-in-out duration-300 hover:-translate-y-1 hover:scale-105 "
       style={{
         backgroundImage: `url('/programs/${id}/contents/${_id}.png')`,
